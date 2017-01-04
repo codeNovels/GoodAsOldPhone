@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,16 +25,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="20130810_105254 copy" translatesAutoresizingMaskIntoConstraints="NO" id="JzO-xV-3d2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gM-Op-vG7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Phone Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gM-Op-vG7">
                                 <rect key="frame" x="16" y="75" width="343" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOv-IF-DT6">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOv-IF-DT6">
                                 <rect key="frame" x="92" y="191" width="198" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="button-addtocart"/>
                                 <connections>
                                     <action selector="addToCartPressed:" destination="kfm-TF-zMh" eventType="touchUpInside" id="uny-Lo-Wz4"/>
@@ -42,9 +41,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="wOv-IF-DT6" secondAttribute="trailing" constant="69" id="2gr-Mo-jI6"/>
+                            <constraint firstItem="wOv-IF-DT6" firstAttribute="leading" secondItem="nXZ-PO-kXY" secondAttribute="leadingMargin" constant="76" id="7bf-s6-vPj"/>
+                            <constraint firstItem="5gM-Op-vG7" firstAttribute="leading" secondItem="nXZ-PO-kXY" secondAttribute="leadingMargin" id="8LW-GM-6Of"/>
                             <constraint firstItem="JzO-xV-3d2" firstAttribute="leading" secondItem="nXZ-PO-kXY" secondAttribute="leading" id="MTU-lp-8QC"/>
                             <constraint firstAttribute="trailing" secondItem="JzO-xV-3d2" secondAttribute="trailing" id="bc7-G5-WRX"/>
                             <constraint firstItem="fPy-lP-REN" firstAttribute="top" secondItem="JzO-xV-3d2" secondAttribute="bottom" id="ju3-sE-yCZ"/>
+                            <constraint firstItem="5gM-Op-vG7" firstAttribute="trailing" secondItem="nXZ-PO-kXY" secondAttribute="trailingMargin" id="lvN-dh-9eZ"/>
                             <constraint firstItem="JzO-xV-3d2" firstAttribute="top" secondItem="nXZ-PO-kXY" secondAttribute="top" id="yVp-sw-1R8"/>
                         </constraints>
                     </view>
