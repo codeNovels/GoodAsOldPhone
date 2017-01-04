@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qlP-U1-RKu">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qlP-U1-RKu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,9 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" highlightedImage="20130810_105254 copy" translatesAutoresizingMaskIntoConstraints="NO" id="JzO-xV-3d2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="20130810_105254 copy" translatesAutoresizingMaskIntoConstraints="NO" id="JzO-xV-3d2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gM-Op-vG7">
                                 <rect key="frame" x="16" y="75" width="343" height="39"/>
@@ -42,6 +41,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JzO-xV-3d2" firstAttribute="leading" secondItem="nXZ-PO-kXY" secondAttribute="leading" id="MTU-lp-8QC"/>
+                            <constraint firstAttribute="trailing" secondItem="JzO-xV-3d2" secondAttribute="trailing" id="bc7-G5-WRX"/>
+                            <constraint firstItem="fPy-lP-REN" firstAttribute="top" secondItem="JzO-xV-3d2" secondAttribute="bottom" id="ju3-sE-yCZ"/>
+                            <constraint firstItem="JzO-xV-3d2" firstAttribute="top" secondItem="nXZ-PO-kXY" secondAttribute="top" id="yVp-sw-1R8"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="productImageView" destination="JzO-xV-3d2" id="QbY-P1-m6y"/>
